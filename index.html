@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Petition: Recognise Caucasia as a Continent</title>
+  <meta name="description" content="A semi-serious petition to recognise Caucasia as a distinct continent. Borders are confusing. Mountains are not." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="badge" title="Totally official. Probably.">
+        🏔️ <strong>Caucasia Initiative</strong> <span class="muted small">— v0.1</span>
+      </div>
+      <div class="pill" id="statusPill">🧭 Status: Confused by maps</div>
+    </div>
+
+    <section class="hero">
+      <div class="pill">📜 Petition</div>
+      <h1>Recognise <span style="color:var(--accent)">Caucasia</span> as a Continent</h1>
+      <p class="sub">
+        Continents are half geography, half vibes, and 100% arguments. The Caucasus doesn't fit neatly into anyone's boxes.
+        So we're proposing a new box: <strong>Caucasia™</strong>.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Sign the petition</h2>
+
+          <label for="name">Name (or your finest alias)</label>
+          <input id="name" placeholder="Queen Tamar Fan Club" />
+
+          <label for="country">Country (optional)</label>
+          <input id="country" placeholder="Georgia / Mackiland / The Socks Republic" />
+
+          <label for="reason">Any comments?</label>
+          <textarea id="reason" rows="4" placeholder="LET'S MAKE THIS HAPPEN!"></textarea>
+
+          <div class="btnrow">
+            <button class="primary" id="signBtn">✍️ Sign</button>
+            <button class="ghost" id="shareBtn">📣 Share</button>
+          </div>
+
+          <div class="toast ok" id="toastOk">✅ Signed. Your contribution has been recorded.</div>
+          <div class="toast warn" id="toastWarn">⚠️ Please enter at least a name.</div>
+        </div>
+
+        <div class="card">
+          <h2>Live signature count</h2>
+          <div class="kpi">
+            <div class="pill"><span class="num" id="count">0</span> signatures</div>
+          </div>
+          <hr style="border:0;border-top:1px solid rgba(255,255,255,.12); margin: 14px 0;">
+          <h2>Map</h2>
+          <div class="mapbox">
+            <div>
+              <div class="small muted"><img src="assets/map.png" alt="Map of the Caucasus region"></div>
+            </div>
+          </div>
+          <p class="fine" style="margin-top:10px;">
+            Disclaimer: This petition is humorous, but the point is real: the Caucasus is a distinct region and deserves more than "uhh… Europe-ish?"
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 18px;" class="two">
+      <div class="card">
+        <h2>Why Caucasia?</h2>
+        <ul>
+          <li><strong>Geography:</strong> mountains + seas = very continent-coded.</li>
+          <li><strong>Culture:</strong> unique languages, traditions, and food.</li>
+          <li><strong>History:</strong> ancient.</li>
+          <li><strong>Education:</strong> reduces "Wait… is Georgia in Europe or Asia?" by at least 73%.</li>
+          <li><strong>Precedent:</strong> Europe is basically Asia's stylish peninsula. So… rules are flexible.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>FAQ</h2>
+        <p><strong>Is this serious?</strong><br><span class="muted">Half serious, fully committed.</span></p>
+        <p><strong>Will this change borders?</strong><br><span class="muted">No. </span></p>
+        <p><strong>What about countries?</strong><br><span class="muted">Countries stay the same. Just a new continent layer.</span></p>
+        <p><strong>What about the Ural Mountains dividing Europe/Asia?</strong><br><span class="muted">Exactly! If mountains can divide continents, they can also create them.</span></p>
+        <p><strong>Which countries would be in Caucasia?</strong><br><span class="muted">The Caucasus nations (Georgia, Armenia, Azerbaijan). We're not expanding into random territory.</span></p>
+        <p><strong>Can I share this?</strong><br><span class="muted">Absolutely! The more the merrier.</span></p>
+        <p><strong>Who is behind this?</strong><br><span class="muted">Me. Funded my <a href="https://nationstates.net/nation=mackiland" target="_blank">Mackiland</a></span></p>
+
+
+      </div>
+    </section>
+
+    <div class="footer fine">
+      © <span id="year"></span> Caucasia Initiative (unofficial, but emotionally official).
+    </div>
+  </div>
+
+  <!-- Supabase Client Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
